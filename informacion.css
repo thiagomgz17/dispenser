@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f6ff, #f5f5f5);
+    color: #333;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+    width: 100%;
+    min-height: 110px;
+
+    background: linear-gradient(90deg, #111827, #1e3a5f);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 60px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.tecnica img {
+    width: 140px;
+    height: auto;
+}
+
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav p {
+    font-weight: bold;
+}
+
+nav h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00a6e6;
+}
+
+
+/* =========================
+   BOTÓN VOLVER
+========================= */
+
+nav ul {
+    display: flex;
+    gap: 12px;
+
+    /* Sin puntitos */
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    background-color: #00a6e6;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+nav li:hover {
+    background-color: #007bb5;
+
+    transform: translateY(-3px);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* =========================
+   SECCIÓN
+========================= */
+
+section {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 50px auto;
+}
+
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+article {
+    background-color: white;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+article h1 {
+    color: #0077b6;
+
+    font-size: 32px;
+
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+article h1:first-child {
+    margin-top: 0;
+}
+
+
+/* =========================
+   SUBTÍTULO
+========================= */
+
+.subtitulo {
+    color: #0077b6;
+
+    font-size: 25px;
+
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+article p {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   LISTA DE ARDUINO
+========================= */
+
+.lista-arduino {
+    width: 70%;
+
+    margin: 20px auto 30px auto;
+
+    padding-left: 40px;
+
+    text-align: left;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    /* Pone los puntitos */
+    list-style-type: disc;
+}
+
+.lista-arduino li {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   IMÁGENES NORMALES
+========================= */
+
+article img {
+    width: 300px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin: 20px auto;
+}
+
+
+/* =========================
+   IMÁGENES DE CÓDIGO
+========================= */
+
+article img.codigo {
+    width: 850px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin: 35px auto;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   EFECTO AL PASAR EL MOUSE
+========================= */
+
+article img.codigo:hover {
+    transform: scale(1.01);
+}
+
+
+/* =========================
+   VIDEO DEL PROYECTO
+========================= */
+
+.video-proyecto {
+    width: 450px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin: 20px auto;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    section {
+        width: 92%;
+
+        margin: 30px auto;
+    }
+
+    article {
+        padding: 25px;
+    }
+
+    article h1 {
+        font-size: 26px;
+    }
+
+    article p {
+        font-size: 16px;
+    }
+
+    /* Lista en celular */
+
+    .lista-arduino {
+        width: 100%;
+
+        padding-left: 30px;
+
+        font-size: 16px;
+    }
+
+    /* Imágenes normales en celular */
+
+    article img {
+        width: 250px;
+
+        max-width: 100%;
+    }
+
+    /* Imágenes de código en celular */
+
+    article img.codigo {
+        width: 100%;
+
+        max-width: 100%;
+    }
+
+    /* Video en celular */
+
+    .video-proyecto {
+        width: 300px;
+
+        max-width: 100%;
+    }
+}

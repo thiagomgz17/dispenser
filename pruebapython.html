@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Python</title>
+
+    <link rel="stylesheet" href="informacion.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="tecnica">
+            <img src="tecnica.PNG" alt="Técnica">
+        </div>
+
+        <nav>
+            <p>7°2° PROGRAMACION</p>
+
+            <h2>Python</h2>
+
+            <ul>
+                <li>
+                    <a href="index.html">Volver</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <section>
+
+        <article>
+
+            <h1>¿QUÉ ES PYTHON?</h1>
+
+            <img src="python.png" alt="Python">
+
+            <p>
+                Python es un lenguaje de programación utilizado para desarrollar
+                diferentes tipos de programas y aplicaciones. Se caracteriza por
+                tener una sintaxis sencilla y fácil de entender, por lo que es muy
+                utilizado tanto por personas que están comenzando a programar como
+                por programadores con experiencia.
+                <br><br>
+
+                Python permite crear programas, automatizar tareas, trabajar con
+                datos, desarrollar aplicaciones y controlar diferentes sistemas.
+                Además, cuenta con muchas herramientas y bibliotecas que permiten
+                ampliar sus posibilidades.
+                <br><br>
+
+                En nuestro proyecto, Python forma parte de las herramientas que
+                utilizamos para aplicar conocimientos de programación y
+                automatización, trabajando junto con Arduino para lograr el
+                funcionamiento del sistema.
+            </p>
+
+
+            <h1>PROYECTO DEL DISPENSER<br>(PARTE DE PYTHON)</h1>
+
+            <p>
+                Lo que se hizo fue una aplicación para el dispenser de Arduino.
+                <br><br>
+
+                Así se ve el programa final:
+            </p>
+
+            <img src="TK.png" alt="Programa realizado con Tkinter">
+
+
+            <p>
+                El código utilizado para crear este programa es el siguiente:
+            </p>
+
+            <img class="codigo" src="Codigos1.png" alt="Código 1">
+
+            <img class="codigo" src="Codigos2.png" alt="Código 2">
+
+            <p>
+                Todo el código que se muestra es parte de cómo está hecho el
+                programa final, excepto lo que está tachado en rojo.
+                <br><br>
+
+                Se utilizó una librería gráfica llamada <strong>Tkinter</strong>.
+            </p>
+
+
+            <img src="foto3.png" alt="Tkinter">
+
+
+            <p>
+                Este texto aparece a partir del siguiente código:
+            </p>
+
+            <img class="codigo" src="Codigos3.png" alt="Código 3">
+
+
+            <p>
+                Lo que hace esta parte del código es cambiar el color del texto.
+                Cuando hay menos de 5 unidades, el texto se muestra de color rojo.
+                Si hay 5 unidades o más, el texto permanece de color negro.
+            </p>
+
+
+            <!-- SOLO ESTA IMAGEN ES MÁS GRANDE -->
+
+            <img class="foto-python" src="foto.png" alt="Texto del programa">
+
+
+            <p>
+                Esta imagen aparece a partir del siguiente código:
+            </p>
+
+            <img class="codigo" src="Codigos4.png" alt="Código 4">
+
+
+            <p>
+                Este código se encarga de darle una posición a la imagen.
+                También llama a la imagen y establece dónde debe aparecer y
+                qué color de fondo debe tener.
+            </p>
+
+
+            <img src="foto2.png" alt="Imagen del programa">
+
+
+            <h1>¿CÓMO FUNCIONA EL BOTÓN?</h1>
+
+            <p>
+                El botón realiza la siguiente función:
+            </p>
+
+            <img class="codigo" src="Codigos5.png" alt="Código 5">
+
+
+            <p>
+                Esta función toma el contenido que se encuentra dentro del
+                <strong>Entry</strong> y borra lo que se escribió en el campo
+                gráfico.
+            </p>
+
+
+            <h1>COMUNICACIÓN CON ARDUINO</h1>
+
+            <p>
+                Ahora se realiza la comunicación entre Python y Arduino.
+            </p>
+
+            <img class="codigo" src="Codigos6.png" alt="Código 6">
+
+
+            <p>
+                Lo que hace este código es conectar la variable Arduino con la
+                placa Arduino a través del puerto serial.
+                <br><br>
+
+                El puerto COM en realidad va acompañado de un número, por ejemplo
+                <strong>COM3</strong>. De esta manera, Python reconoce el puerto
+                utilizado y puede comunicarse con la placa Arduino.
+                <br><br>
+
+                Si Arduino no está conectado o no se encuentra disponible el
+                puerto indicado, aparecerá un mensaje en la terminal informando
+                que no está conectado.
+            </p>
+
+
+            <h1>¿CÓMO DESCUENTA EL PROGRAMA?</h1>
+
+            <img class="codigo" src="Codigos7.png" alt="Código 7">
+
+
+            <p>
+                El programa lee la información que recibe desde Arduino.
+                Si la variable Arduino tiene información disponible y
+                <strong>arduino.in_waiting</strong> es mayor que 0, el programa
+                lee lo que fue enviado desde Arduino.
+                <br><br>
+
+                Si la línea recibida es igual a <strong>"presionado"</strong>,
+                el programa descuenta una unidad del stock, siempre que la
+                cantidad sea mayor que 0.
+            </p>
+
+
+            <h1>VALIDACIÓN DE LOS DATOS</h1>
+
+            <p>
+                Volvemos a Python. Esta función se encarga de registrar la
+                cantidad ingresada por el usuario.
+            </p>
+
+            <img class="codigo" src="Codigos8.png" alt="Código 8">
+
+
+            <p>
+                Esta función registra la cantidad ingresada y también muestra
+                mensajes de error si se introducen letras o si se intenta
+                ingresar un número negativo como stock.
+            </p>
+
+
+            <h1>TRABAJO EN HILOS</h1>
+
+            <img class="codigo" src="Codigos9.png" alt="Código 9">
+
+
+            <p>
+                Esta parte del código hace que el programa trabaje utilizando
+                <strong>hilos (threads)</strong>.
+                <br><br>
+
+                Un hilo permite que diferentes tareas del programa puedan
+                ejecutarse al mismo tiempo sin que una tarea bloquee
+                completamente a la otra.
+                <br><br>
+
+                En nuestro proyecto esto permite que la aplicación pueda
+                mantenerse funcionando mientras espera y recibe información
+                desde Arduino.
+            </p>
+
+        </article>
+
+    </section>
+
+</body>
+
+</html>

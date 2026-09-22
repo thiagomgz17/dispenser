@@ -72,7 +72,6 @@ nav ul {
     display: flex;
     gap: 12px;
 
-    /* Sin puntitos */
     list-style: none;
 
     padding: 0;
@@ -196,7 +195,6 @@ article p {
 
     line-height: 1.8;
 
-    /* Pone los puntitos */
     list-style-type: disc;
 }
 
@@ -221,6 +219,25 @@ article img {
     display: block;
 
     margin: 20px auto;
+}
+
+
+/* =========================
+   SOLO ARDUINOREAL6 MÁS GRANDE
+========================= */
+
+article img.foto-grande {
+    width: 700px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin: 30px auto;
 }
 
 
@@ -319,6 +336,7 @@ article img.codigo:hover {
         font-size: 16px;
     }
 
+
     /* Lista en celular */
 
     .lista-arduino {
@@ -329,6 +347,7 @@ article img.codigo:hover {
         font-size: 16px;
     }
 
+
     /* Imágenes normales en celular */
 
     article img {
@@ -336,6 +355,16 @@ article img.codigo:hover {
 
         max-width: 100%;
     }
+
+
+    /* SOLO ARDUINOREAL6 EN CELULAR */
+
+    article img.foto-grande {
+        width: 100%;
+
+        max-width: 100%;
+    }
+
 
     /* Imágenes de código en celular */
 
@@ -345,11 +374,39 @@ article img.codigo:hover {
         max-width: 100%;
     }
 
+
     /* Video en celular */
 
     .video-proyecto {
-        width: 300px;
+        text-align: center;
 
-        max-width: 100%;
+        margin: 40px auto;
     }
+
+    .video-proyecto h2 {
+        color: #168ac4;
+
+        margin-bottom: 25px;
+    }
+
+    .video-container {
+        display: flex;
+
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .video-container iframe {
+        max-width: 100%;
+
+        border-radius: 10px;
+    }
+}
+
+La parte importante es esta:
+
+article img.foto-grande {
+    width: 700px;
+    max-width: 100%;
 }

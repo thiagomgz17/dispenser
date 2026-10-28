@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link rel="stylesheet" href="informacion.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="tecnica">
+            <img src="tecnica.png" alt="Logo de la escuela">
+        </div>
+
+        <nav>
+            <h1>Igualdad Menstrual</h1>
+            <p>7°2° PROGRAMACIÓN</p>
+            <h2>Manual de Usuario</h2>
+
+            <ul>
+                <li><a href="index.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article>
+
+            <h1>MANUAL DE USUARIO</h1>
+
+            <h2>Máquina Expendedora de Productos de Higiene Femenina</h2>
+
+            <h1>1. Introducción y Propósito del Sistema</h1>
+
+            <p>
+                La Máquina Expendedora de Productos de Higiene Femenina es un sistema
+                automatizado diseñado para facilitar el acceso rápido, sencillo y
+                autónomo a insumos de higiene personal (toallitas y protectores diarios)
+                en espacios educativos e institucionales.
+                <br><br>
+                Está dirigida a las estudiantes, personal y usuarias de la comunidad
+                escolar o de las instalaciones donde se encuentre instalado el prototipo.
+            </p>
+
+            <h1>2. Requisitos Previos y Verificación Inicial</h1>
+
+            <p>
+                Antes de iniciar la operación del equipo, asegúrese de cumplir con
+                los siguientes puntos de verificación:
+            </p>
+
+            <ul>
+                <li>
+                    Comprobar la conexión eléctrica de la batería de 9V para motores
+                    y la conexión del puerto USB/Arduino al sistema principal.
+                </li>
+
+                <li>
+                    Verificar que los LEDs indicadores y las luces del módulo estén
+                    encendidos en estado de reposo/standby.
+                </li>
+            </ul>
+
+            <h1>3. Guía de Uso Paso a Paso (Interacción del Usuario)</h1>
+
+            <p>
+                Siga estas instrucciones para solicitar un producto del dispensador:
+            </p>
+
+            <h2 class="subtitulo">Paso 1: Identificación del producto</h2>
+
+            <p>
+                Identificar el producto que se desea seleccionar: toallitas en el
+                Botón T o protectores diarios en el Botón P.
+            </p>
+
+            <h2 class="subtitulo">Paso 2: Presionar el botón</h2>
+
+            <p>
+                Presionar una sola vez el pulsador correspondiente al producto elegido.
+            </p>
+
+            <h2 class="subtitulo">Paso 3: Respuesta del sistema</h2>
+
+            <p>
+                Si HAY STOCK: el LED indicador correspondiente se encenderá y el motor
+                despachará el producto en el depósito de salida.
+                <br><br>
+                Si NO HAY STOCK: se emitirá una señal sonora de alerta (Buzzer)
+                avisando que el producto no está disponible.
+            </p>
+
+            <h2 class="subtitulo">Paso 4: Retiro del producto</h2>
+
+            <p>
+                Retirar el producto dispensado del depósito de salida.
+            </p>
+
+            <h1>4. Señales del Sistema (Luces y Sonidos)</h1>
+
+            <p>
+                El sistema utiliza la siguiente matriz de indicadores para comunicar
+                su estado operativo.
+            </p>
+
+            <img src="tabla_manual.png" class="foto-grande" >
+          
+            <h1>5. Mantenimiento y Resolución de Problemas para el Operador</h1>
+
+            <p>
+                Guía de procedimientos para el personal encargado de la atención
+                y soporte del dispositivo.
+            </p>
+
+            <h2 class="subtitulo">¿Qué hacer si no dispensa el producto?</h2>
+
+            <p>
+                Comprobar la alineación del mecanismo helicoidal/empujador y verificar
+                el nivel de carga de la batería de 9V que alimenta los motores.
+            </p>
+
+            <h2 class="subtitulo">¿Qué hacer si el sistema no responde al pulsar un botón?</h2>
+
+            <p>
+                Verificar la conexión del cable USB de comunicación serie con el
+                servidor Python y confirmar que el programa de control se encuentra activo.
+            </p>
+
+            <h2 class="subtitulo">¿Cómo recargar el stock de los compartimientos de productos?</h2>
+
+            <p>
+                Abrir el gabinete de almacenamiento, colocar las unidades de toallitas
+                y/o protectores en los canales correspondientes asegurando su correcta
+                orientación, y actualizar el conteo en el sistema de gestión.
+            </p>
+
+        </article>
+    </section>
+
+</body>
+</html>

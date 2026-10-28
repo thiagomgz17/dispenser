@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Arduino</title>
+    <title>Arduino - Informe Técnico</title>
 
     <link rel="stylesheet" href="informacion.css">
 </head>
@@ -13,33 +14,27 @@
 <body>
 
     <header>
-
         <div class="tecnica">
-            <img src="tecnica.png" alt="Técnica">
+            <img src="tecnica.png" alt="Logo de la escuela">
         </div>
 
         <nav>
-            <p>7°2° PROGRAMACION</p>
-
+            <p>7°2° PROGRAMACIÓN</p>
             <h2>Arduino</h2>
 
             <ul>
-                <li>
-                    <a href="index.html">Volver</a>
-                </li>
+                <li><a href="index.html">Volver</a></li>
             </ul>
         </nav>
-
     </header>
 
-
     <section>
-
         <article>
+
 
             <h1>¿QUÉ ES UN ARDUINO?</h1>
 
-            <img src="arduino.png" alt="Arduino">
+            <img src="arduino.png" alt="Placa Arduino Uno">
 
             <p>
                 El Arduino Uno es una placa electrónica programable que sirve
@@ -47,169 +42,212 @@
             </p>
 
             <p>
-                En palabras simples: es como una pequeña computadora que vos
+                En palabras simples, es como una pequeña computadora que vos
                 programás para que haga cosas.
             </p>
 
 
-            <h1>PROYECTO DEL DISPENSER<br>(PARTE DE ARDUINO)</h1>
+            <h1>Informe Técnico: Sistema de Control Automatizado</h1>
 
             <p>
-                Esto es lo que hicieron sobre el dispenser
-                de Arduino.
+                Documentación oficial del proyecto de Programación e Informática.
             </p>
 
 
-            <img src="arduinoreal.png" alt="Foto del proyecto">
+            <h1>1. Portada e Introducción</h1>
+
+            <h2 class="subtitulo">Datos del Proyecto</h2>
 
             <p>
-                Este es el proceso de armado para probar, tocar el pulsador
-                y que caiga la toallita femenina.
+                <strong>Proyecto:</strong> Máquina Expendedora de Productos de Higiene<br>
+                <strong>Integrantes:</strong> Solange Sejas, Macarena Correa,
+                Natalia Hipólito, Francisco Vazquez, Thiago Pacheco,
+                Estefania Gretella, Thiago Gómez y Dylan Vallejos.<br>
+                <strong>Curso / Grado:</strong> 7mo Programación, 7mo Informática<br>
+                <strong>Materia:</strong> Evaluación de Proyectos / Modelos y Sistemas<br>
+                <strong>Ubicación del Laboratorio:</strong> E.E.S.T. N.º 1 José Ingenieros
             </p>
 
-            <img src="arduinoreal2.png" alt="Foto del proyecto">
-
-            <img src="arduinoreal3.png" alt="Foto del proyecto">
-
-            <img src="arduinoreal4.png" alt="Foto del proyecto">
+            <h2 class="subtitulo">Resumen del Proyecto</h2>
 
             <p>
-                Luego de que funcionara el pulsador con el motor agregamos
-                un puente H para programar el segundo motor, y así tenemos
-                el dispenser de toallitas y el otro dispenser de protectores diarios.
+                El proyecto consiste en el diseño y desarrollo de un prototipo
+                de máquina expendedora automática de productos de higiene
+                femenina, utilizando un Arduino Uno como sistema principal
+                de control.
             </p>
-
-
-            
-            <img class="foto-grande" src="arduinoreal6.png" alt="Foto del proyecto">
-
 
             <p>
-                Así quedó el proyecto final.
+                La máquina está diseñada para permitir que el usuario seleccione
+                un producto mediante botones. Una vez realizada la selección,
+                el Arduino procesa la señal recibida y activa el motor
+                correspondiente, utilizando un módulo puente H para controlar
+                su funcionamiento. El motor acciona un mecanismo que desplaza
+                el producto y permite su salida de manera automática.
             </p>
-
-            <img src="">    
-
-            <h2 class="subtitulo">VIDEO DEL PROYECTO</h2>
-
-            <div class="video-container">
-
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/8u7VvOb0-Cw"
-                    title="Video del proyecto Arduino"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
-
-            </div>
-
-
-            <h2 class="subtitulo">COMPONENTES UTILIZADOS</h2>
 
             <p>
-                Los componentes que utilizaron fueron:
+                El sistema busca ser una propuesta económica, sencilla y
+                funcional, que pueda utilizarse como modelo para facilitar
+                el acceso a productos de higiene femenina en lugares como
+                escuelas, instituciones u otros espacios públicos.
             </p>
 
+            <p>
+                Además, el proyecto permite aplicar conocimientos de
+                programación, electrónica y automatización, integrando
+                componentes de entrada, procesamiento y salida en un mismo
+                sistema. De esta manera, se demuestra cómo una placa Arduino
+                puede utilizarse para desarrollar soluciones tecnológicas
+                destinadas a resolver necesidades de la vida cotidiana.
+            </p>
+
+            <h2 class="subtitulo">Objetivos</h2>
+
+            <p>
+                <strong>Objetivo general:</strong>
+                Diseñar y desarrollar un prototipo de máquina expendedora
+                automática de productos de higiene femenina, utilizando
+                Arduino, botones y motores, capaz de entregar un producto
+                seleccionado de manera automática, sencilla y controlada.
+            </p>
+
+            <p><strong>Objetivos específicos:</strong></p>
 
             <ul class="lista-arduino">
-
-                <li>Un Arduino Uno</li>
-
-                <li>Un puente H</li>
-
-                <li>2 resortes hechos con alambre galvanizado</li>
-
-                <li>8 LEDs</li>
-
-                <li>3 protoboards</li>
-
-                <li>2 botones</li>
-
-                <li>Varios cables</li>
-
-                <li>2 motores de corriente continua (DC)</li>
-
-                <li>Una batería de 9V</li>
-
-                <li>Varias piezas de impresión 3D</li>
-
-                <li>2 resistencias</li>
-
+                <li>Implementar un Arduino Uno como unidad principal de control del sistema.</li>
+                <li>Utilizar botones como medio de interacción entre el usuario y la máquina.</li>
+                <li>Programar el Arduino para detectar las diferentes selecciones realizadas.</li>
+                <li>Controlar motores de corriente continua mediante módulos puente H.</li>
+                <li>Diseñar un mecanismo que permita desplazar y entregar los productos de forma automática.</li>
+                <li>Integrar correctamente los componentes electrónicos y la programación para obtener un sistema funcional.</li>
+                <li>Aplicar conocimientos de programación, electrónica y automatización en un proyecto práctico.</li>
+                <li>Desarrollar una alternativa de bajo costo que facilite el acceso a productos de higiene femenina.</li>
+                <li>Comprobar el funcionamiento del prototipo y detectar posibles mejoras para futuras versiones.</li>
             </ul>
 
 
-            <h1>LED</h1>
+            <h1>2. Requerimientos de Hardware y Software</h1>
 
-            <img src="leds.png" alt="LED">
+            <h2 class="subtitulo">Componentes de Hardware</h2>
 
             <p>
-                Los 4 LEDs se conectan para encenderse al mismo tiempo cuando
-                se presiona el botón. Se utiliza una sola resistencia de 220 Ω
-                conectada antes de los cuatro LEDs para limitar la corriente.
-                Al presionar el botón, Arduino recibe la señal y activa los LEDs,
-                haciendo que los cuatro se enciendan simultáneamente.
+                La siguiente lista detalla los componentes necesarios para
+                la construcción del circuito.
             </p>
 
-            
-<h1>Vamos a la parte de los códigos</h1>
+            <img src="tabla_arduino.png" class="foto-grande">
 
-<img class="foto-grande" src="codigo_arduino.png" alt="Código de Arduino: declaración de variables">
 
-<p>
-    En esta parte declaramos las variables que vamos a utilizar en el programa.
-    Las variables permiten guardar información, como números o estados de los
-    componentes, para poder utilizarlos durante la ejecución del código.
-</p>
+            <h1>3. Arquitectura del Hardware (Circuito)</h1>
 
-<img class="foto-grande" src="codigo_arduino2.png" alt="Segunda parte del código de Arduino">
+            <h2 class="subtitulo">Diagrama de Conexiones</h2>
 
-<p>
-    En esta parte explicamos las instrucciones que aparecen en el código y
-    cuál es su función dentro del funcionamiento del proyecto.
-</p>
+            <p>
+                En esta sección se incluye el esquema del circuito realizado
+                en Fritzing o Tinkercad.
+            </p>
 
-<img class="foto-grande" src="codigo_arduino3.png" alt="Tercera parte del código de Arduino">
+            <p>
+                <strong>Diagrama del circuito:</strong> pendiente de insertar.
+            </p>
 
-<p>
-    Aquí explicamos qué hace esta sección del programa y cómo participa en
-    el funcionamiento del circuito.
-</p>
+            <h2 class="subtitulo">Tabla de Mapeo de Pines (Pinout)</h2>
 
-<img class="foto-grande" src="codigo_arduino4.png" alt="Cuarta parte del código de Arduino">
+            <p>
+                <img src="tabla_arduino2.png" class="foto-grande">
 
-<p>
-    En esta sección describimos las instrucciones que se utilizan y qué
-    resultado producen en el proyecto.
-</p>
+            <h1>4. Código de Arduino</h1>
 
-<img class="foto-grande" src="codigo_arduino5.png" alt="Quinta parte del código de Arduino">
+            <p>
+                A continuación, se presentan las diferentes partes del código
+                utilizado para programar el Arduino y controlar los componentes
+                del proyecto.
+            </p>
 
-<p>
-    Esta parte contiene instrucciones que ayudan a controlar el funcionamiento
-    de los componentes conectados a la placa Arduino.
-</p>
+            <h2 class="subtitulo">Declaración de variables</h2>
 
-<img class="foto-grande" src="codigo_arduino6.png" alt="Sexta parte del código de Arduino">
+            <img class="foto-grande"
+                 src="codigo_arduino.png"
+                 alt="Código de Arduino: declaración de variables">
 
-<p>
-    Aquí explicamos cómo continúa el programa y cómo se relaciona esta sección
-    con las instrucciones anteriores.
-</p>
+            <p>
+                En esta parte declaramos las variables que vamos a utilizar
+                en el programa. Las variables permiten guardar información,
+                como números o estados de los componentes, para utilizarlos
+                durante la ejecución del código.
+            </p>
 
-<img class="foto-grande" src="codigo_arduino7.png" alt="Última parte del código de Arduino">
+            <h2 class="subtitulo">Segunda parte del código</h2>
 
-<p>
-    Para finalizar, explicamos las últimas instrucciones y cómo contribuyen
-    al funcionamiento general del proyecto.
-</p>
+            <img class="foto-grande"
+                 src="codigo_arduino2.png"
+                 alt="Segunda parte del código de Arduino">
 
+            <p>
+                En esta parte explicamos las instrucciones que aparecen en
+                el código y cuál es su función dentro del funcionamiento
+                del proyecto.
+            </p>
+
+            <h2 class="subtitulo">Tercera parte del código</h2>
+
+            <img class="foto-grande"
+                 src="codigo_arduino3.png"
+                 alt="Tercera parte del código de Arduino">
+
+            <p>
+                Aquí explicamos qué hace esta sección del programa y cómo
+                participa en el funcionamiento del circuito.
+            </p>
+
+            <h2 class="subtitulo">Cuarta parte del código</h2>
+
+            <img class="foto-grande"
+                 src="codigo_arduino4.png"
+                 alt="Cuarta parte del código de Arduino">
+
+            <p>
+                En esta sección describimos las instrucciones que se utilizan
+                y qué resultado producen en el proyecto.
+            </p>
+
+            <h2 class="subtitulo">Quinta parte del código</h2>
+
+            <img class="foto-grande"
+                 src="codigo_arduino5.png"
+                 alt="Quinta parte del código de Arduino">
+
+            <p>
+                Esta parte contiene instrucciones que ayudan a controlar
+                el funcionamiento de los componentes conectados a la placa
+                Arduino.
+            </p>
+
+            <h2 class="subtitulo">Sexta parte del código</h2>
+
+            <img class="foto-grande"
+                 src="codigo_arduino6.png"
+                 alt="Sexta parte del código de Arduino">
+
+            <p>
+                Aquí explicamos cómo continúa el programa y cómo se relaciona
+                esta sección con las instrucciones anteriores.
+            </p>
+
+            <h2 class="subtitulo">Última parte del código</h2>
+
+            <img class="foto-grande"
+                 src="codigo_arduino7.png"
+                 alt="Última parte del código de Arduino">
+
+            <p>
+                Para finalizar, explicamos las últimas instrucciones y cómo
+                contribuyen al funcionamiento general del proyecto.
+            </p>
+
+        </article>
     </section>
 
-
 </body>
-
 </html>
